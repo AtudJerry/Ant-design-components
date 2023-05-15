@@ -1,22 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Topbar from "./Components/Topbar";
+import Sidebar from "./Components/Sidebar";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import {} from "antd";
 
 function App() {
   return (
     <div className="App">
+      <Topbar />
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="content">
+        <Sidebar/>
+        
+
+        <Routes>
+       
+          <Route path="/" element={<div>Home</div>}></Route>
+          <Route path="Dashboard" element={<div>Dashboard</div>}></Route>
+          <Route path="UserList" element={<div>UserList</div>}></Route>
+          <Route path="Profile" element={<div>Profile</div>}></Route>
+          <Route path="Signout" element={<div>Signout</div>}></Route>
+        </Routes>
+        </div>
       </header>
     </div>
   );
