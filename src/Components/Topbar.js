@@ -1,16 +1,17 @@
 import React from "react"
-import WarningOutlined from "@ant-design/icons"
+
 import {} from "antd"
-import "./bar.css"
+import "./css/bar.css"
+import { WarningOutlined } from "@ant-design/icons"
 
 const Topbar = () =>{
 
     return(
-        <div>
-            <div className="topbar"> 
-                <div>Topbar</div>
+        <div className="top">
+            <div className="topbar" > 
+                <div>logo</div>
 
-                <div><WarningOutlined color="seconday"/>Top</div>
+                <div> <WarningOutlined/> UNIVERSITE DE DSCHANG</div>
 
 
                 </div>

@@ -1,0 +1,34 @@
+.topbar{
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    margin-right: 0%;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: white white rgb(212, 75, 212) white;
+    border-bottom-width: 6px;
+    
+
+}
+.sidebar{
+    height: 100vh;
+    width: 30%;
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media (min-width : 100px) and (max-width : 900px){
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

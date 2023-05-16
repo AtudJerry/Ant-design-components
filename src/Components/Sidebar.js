@@ -2,16 +2,19 @@
 import { Menu } from 'antd'
 import {Routes, Route, useNavigate} from "react-router-dom"
 import React, { Children } from 'react'
-import { DashboardOutlined, HomeOutlined, PoweroffOutlined, UnorderedListOutlined, UserOutlined } from '@ant-design/icons'
-import "./bar.css"
+import { ContactsOutlined, DashboardOutlined, EditOutlined, FieldTimeOutlined, HomeOutlined, MenuOutlined, PoweroffOutlined, SettingOutlined, SwapOutlined, UnorderedListOutlined, UserOutlined } from '@ant-design/icons'
+import "./css/bar.css"
 const Sidebar = () =>{
     const navigate = useNavigate()
 
     return(
         <div >
-        <div className='sidebar' style={{display:'flex', flexDirection:'row'}}>
-            <Menu onClick={ ({key}) =>{
+         <div className='sidebar' style={{display:'flex', flexDirection: 'row'}}>
+        
 
+        
+            <Menu onClick={ ({key}) =>{
+            
                 if (key === "signout") {
 
                 }else{
@@ -22,16 +25,37 @@ const Sidebar = () =>{
 
 
 
-            }}  items={[
-                {label:"Home", key: "/", icon: <HomeOutlined/>},
-                {label: "Dashboard",  key: "/dashboard", icon: <DashboardOutlined/>},
-                {label: "Users List",  key: "/usersLists", icon: <UnorderedListOutlined/>, 
-                children:[
+            }}  
+           
+            items={[
+                {icon:  <MenuOutlined style={{ fontSize: '17px', marginLeft: '93%', color: '#000', marginRight:'2%' }}/> },
+                {label:"Accueil", key: "/", icon: <FieldTimeOutlined/> },
+                {label: "Systeme",  key: "/systeme", icon: <SettingOutlined/>,
+            children:[
                     {label:'active user', key: "userList"}, 
                     {label:'inctive user', key: "userLis"}],
                 },
-                {label: "Profile",  key: "/profile", icon: <UserOutlined/>},
-                {label: "Signout",  key: "/signout", icon: <PoweroffOutlined/>},
+                {label: "Editer Mot de passe",  key: "/Editer Mot de passe", icon: <EditOutlined/>, 
+               
+                },
+                {label: "Gestion des factures",  key: "/gestion des factures", icon: <SwapOutlined />,
+            children:[
+                    {label:'active user', key: "userList"}, 
+                    {label:'inctive user', key: "userLis"}],
+                },
+                {label: "Contacts",  key: "/contacts", icon: <SwapOutlined />,
+            children:[
+                    {label:'active user', key: "userList"}, 
+                    {label:'inctive user', key: "userLis"}],
+                },
+                {label: "Statistiques",  key: "/Statistiques", icon: <SwapOutlined/>,
+                children:[
+                        {label:'active user', key: "userList"}, 
+                        {label:'inctive user', key: "userLis"}],
+                    },
+                    {label: "Consultations",  key: "/Consultations", icon: <UserOutlined/>, 
+               
+                },
             ]}></Menu>
            
         </div>

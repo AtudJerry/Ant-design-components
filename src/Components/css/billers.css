@@ -1,0 +1,268 @@
+.content{
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    margin-right: 0%;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 0.4%;
+    
+}
+.left{
+    color: black;
+    width: 60vw;
+    background-color: white;
+    height: 40vh;
+    width: 50vw;
+  
+}
+.left-head{
+    font-size: large;
+    text-align: center;
+    color: rgb(185, 185, 185);
+}
+.volume{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13vh;
+    width: 80vw;
+    margin-top: 30px;
+
+}
+
+.left-side{
+    width: 20%;
+    height: 100%;
+    background-color:  rgb(168, 64, 168);
+    
+
+}
+.right-side{
+    /* background-color: white; */
+    font-size: small;
+    margin-left: 2%;
+
+}
+.volume-content{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 80%;
+    background-color: white;
+    margin-left: 1%;
+}
+.box{
+    background-color:  rgb(168, 64, 168);
+}
+.content-heading{
+    font-size: small;
+}
+b{
+    font-size: large;
+}
+
+
+/* timeline */
+
+.line-area{
+    display: block;
+    width: 50%;
+    height: 2px;
+    background:  rgb(168, 64, 168);
+    position: absolute;
+    top: 63.9%;
+    left: 16%;
+}
+.wrapper .timeline-area{
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 12%;
+}
+.single-item{
+    width: 6%;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-right: 70px;
+    transition: width .5s;
+    z-index:1;
+}
+
+.single-item > span{
+    height: 32px;
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 100%;
+    cursor: pointer;
+    margin-left: 50%;
+}
+.single-item > span:before{
+    content: "";
+    display: block;
+    width: 9px;
+    margin-left: 9%;
+    height: 10px;
+    background: rgb(64, 0, 64);
+    /* margin: 0 auto 30px; */
+    border-radius: 70%;
+    margin-top: -19px;
+}
+.closing{
+    background-color: white;
+    height: 30px;
+    width: 50vw;
+    margin-left: 1%;
+    text-align: right;
+}
+.menu{
+    text-align: right;
+    margin-left: 48vw;
+}
+
+
+
+/* right */
+.right-top{
+    width: 26vw;
+    height: 30vh;
+    background-color: white;
+    font-size: 13px;
+}
+.right-close{
+    text-align: right;
+    background-color: white;
+}
+.right-close{
+    text-align: right;
+    background-color: white;
+}
+table{
+    border: 0;
+    height: 67%;
+    width: 100%;
+    
+ padding: 7px;
+    background-color: rgb(235, 235, 235);
+}
+.table-heading{
+    background-color: rgb(168, 64, 168);
+    color: white;
+}
+.right-close-bottom{
+    text-align: right;
+    background-color: white;
+}
+.moyens{
+    width: 26vw;
+    height: 30vh;
+    background-color: white;
+    font-size: 13px;
+
+    
+}
+.menu-bottom{
+    margin-left: 24.4vw;
+}
+.moyens-head{
+    text-align: center;
+}
+
+@media (min-width : 100px) and (max-width : 900px){
+.left-side{
+    width: 50%;
+    height: 100%;
+    background-color:  rgb(168, 64, 168);
+    
+}
+.volume-content{
+    display: flex;
+    flex-direction: row;
+    height: 30% !important;
+    width: 100%!important;
+    background-color: white;
+    margin-left: 4%;
+}
+.content-heading{
+    font-size: -20px!important;
+}
+.volume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    width: 50vw;
+
+}
+.content{
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    margin-right: 0%;
+    justify-content: space-between;
+    /* visibility: hidden;
+     */
+}
+
+.left{
+    color: black;
+    width: 60vw;
+    visibility: hidden;
+  
+}
+.line-area{
+    display: block;
+    width: 40%;
+    height: 20%;
+    background:  rgb(168, 64, 168);
+    position: absolute;
+    top: 60.7%;
+    left: 47%;
+    visibility: hidden;
+}
+.closing{
+    background-color: white;
+    height: 30px;
+    width: 50vw;
+    margin-left: 1%;
+    text-align: right;
+}
+.right-top{
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+    font-size: 10px;
+}
+.right-close{
+    text-align: right;
+}
+table{
+    border: 0;
+    height: 25%;
+    width: 80%;
+}
+.moyens{
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+    font-size: 13px;
+
+    
+}
+.menu-bottom{
+    margin-left: 42.4vw;
+}
+.moyens-head{
+    text-align: center;
+}
+.right-close-bottom{
+    text-align: right;
+    background-color: white;
+    width: 79%;
+}
+
+
+}
